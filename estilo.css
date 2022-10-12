@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+*{
+    
+        font-family: 'Roboto', sans-serif;
+        font-weight: 300;
+        margin:0px;
+    }
+
+nav{   
+        background-color: rgb(32, 32, 73);
+        color: blanchedalmond;
+        padding:10px;
+        display:flex;
+        align-items: flex-start;
+    }
+H1{
+    background-image: url(./IMAGENES/tecnologia.webp);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: 50%;
+    padding: 80px 20px ; 
+    margin: 0px 0px ;
+    height: 130px ;
+    text-align: center;
+    font-weight: 600;
+    font-size: 4em;
+    text-transform:uppercase;
+    text-shadow:5px 5px whitesmoke;
+    }
+
+UL{list-style-type: none;}
+
+.principal{
+    padding: 200px;
+    
+    
+    
+
+}
+.tecnologia{
+    
+    max-height:100%;
+
+
+}
