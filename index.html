@@ -1,46 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="./estilo.css">
     <link rel="icon" href="./IMAGENES/LOGO PROY.ICO.ico">
-    <link rel="stylesheet" href="./animation.css">
-    <link rel="stylesheet" href="./transform.css">
-    <title>Lider en Tecnologia</title>
-
-</head>
-
-
-<body>
-    
-     <nav>
+    <title>Lider en Tecnología</title>
+  </head>
+  <body>
+    <nav>
+        <!-- <div class="logo-nav-container"> -->
+            <div>
+                <img class="logo transform" src="./IMAGENES/logo-azul.jpg"  alt="logo">
+            </div>
+            <div >
+                <h1 class="achica-titulo">Technology</h1>
+            </div> 
             
-        <img class="transform logo-giro" src="./IMAGENES/gran logo.png"  alt="logo">
-        <h1>Technology</h1>
-        <div>   
-          <ul class="menu">
-              <li>Nosotros</li>
-              <li>Contacto</li>
-          </ul>            
+           <!-- <span ></span> -->
+           <div class="navigation">
+            <img class="iconito" src="./IMAGENES/ICONO.png" alt="icono">
+            <ul class="show">
+                <li><a href="#nosotros"> Nosotros</a></li>
+                <li><a href=""> Contacto</a></li>
+            </ul>
+        <!-- </div> -->
+          
         </div>
-    
-     </nav>
-    
-    
-     <header class="containt">
-        <div id="carouselExampleControls" class="row carousel slide" data-bs-ride="carousel">
-            <div class="col carousel-inner">
-                <div class="carousel-item active"> 
-                    <img src="./IMAGENES/tecnologia proyecto.jpg" class="d-block w-100" alt="...">
+    </nav> 
+                
+   <header class="containt">
+         <div id="carouselExampleControls" class="row carousel slide" data-bs-ride="carousel">
+            <div class="col carousel-inner ">
+                <div class="carousel-item active altocarousel"> 
+                    <img src="./IMAGENES/tecnologia proyecto.jpg" class="d-block w-100 h-20" alt="tecnologia">
                 </div>
-                <div class="carousel-item">
-                    <img src="./IMAGENES/tecnologia placa.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item altocarousel">
+                    <img src="./IMAGENES/tecnologia placa.jpg" class="d-block w-100 h-20" alt="placa">
                 </div>
-                <div class="carousel-item">
-                    <img src="./IMAGENES/tecnologia ram renegade-1578.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-item altocarousel">
+                    <img src="./IMAGENES/tecnologia ram renegade-1578.jpg" class="d-block w-100 h-20" alt="ram">
                 </div>
             </div>
             <button class="col carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -55,78 +56,56 @@
     
         </header>
 
-        
-
-
-        <main class="principal">
-
-    
-         <section>
+         <main class="principal">
+          <section>
 
             <div class="tarjeta">
-                <img class="img-cel" src="./IMAGENES/CELU.jpg" alt="celular">
-                <a class="boton-tarjeta" href="pag2.html">CELULARES</a>
+                <a href="celulares.html"><img class="imagenes" src="./IMAGENES/CELU.jpg" alt="celular"></a>
+                <a class="boton-tarjeta" href="celulares.html">CELULARES</a>
                 
             </div>
-            <div class="tarjeta">
-                <img class="img-pc" src="./IMAGENES/pc pro.jpg" alt="PC">
-                <a class="boton-tarjeta" href="pag3.html">PC-NOTEBOOK</a>
-            </div>
-        
-        
             
             <div class="tarjeta">
-                <img src="./IMAGENES/LOGO PROYECTO.png" alt="remera">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a class="boton-tarjeta" href="#">Ir...</a>
+               <a href="pc s.html"><img class="imagenes" src="./IMAGENES/pc pro.jpg" alt="PC"></a>
+                <a class="boton-tarjeta" href="pc s.html">PC-NOTEBOOK</a>
+            </div>
+                           
+            <div class="tarjeta">
+                <a href="audio.html"><img class="imagenes" src="./IMAGENES/audio.jpg" alt="audio"></a>
+                <a class="boton-tarjeta" href="audio.html">AUDIO</a>
             </div> 
          
             <div class="tarjeta">
-                <img src="./imagenes/pantalon.jpg" alt="remera">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a class="boton-tarjeta" href="#">Ir...</a>
-            </div>             
-            <div class="tarjeta">
-                <img src="./imagenes/pantalon.jpg" alt="remera">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a class="boton-tarjeta" href="#">Ir...</a>
-            </div>     
-            <div class="tarjeta">
-                <img src="./imagenes/pantalon.jpg" alt="remera">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a class="boton-tarjeta" href="#">Ir...</a>
-            </div>    
-            <div class="tarjeta">
-                <img src="./imagenes/remeras.jpg" alt="remera">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a class="boton-tarjeta" href="">Ir...</a>
-            </div>
-            <div class="tarjeta">
-                <img src="./imagenes/remeras.jpg" alt="remera">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a class="boton-tarjeta" href="">Ir...</a>
-            </div>
-            <div class="tarjeta">
-                <img src="./imagenes/remeras.jpg" alt="remera">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a class="boton-tarjeta" href="">Ir...</a>
-            </div>
-            <div class="tarjeta">
-                <img src="./imagenes/remeras.jpg" alt="remera">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a class="boton-tarjeta" href="">Ir...</a>
-            </div>
-            <div class="tarjeta">
-                <img src="./imagenes/remeras.jpg" alt="remera">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                <a class="boton-tarjeta" href="">Ir...</a>
-            </div>
+                <a href="tv.html"> <img class="imagenes" src="./IMAGENES/TV.jpg" alt="tv">
+                <a class="boton-tarjeta" href="tv.html">TV Y VIDEO</a>
+            </div>            
+                    
          </section>   
         
-        </main>
-        <footer>
+        </main> 
         
-        </footer>
+         <div id="nosotros">
+            <img class="conocer" src="./IMAGENES/NOS THECNOLOGY.jpg" alt="Nosotros">
+         </div>
+    
+
+        <footer>
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/sdfsdf">
+                        <i class="fa-brands fa-instagram icono"></i>
+                    </a>
+                </li>
+                <li><i class="fa-brands fa-telegram"></i></li>
+            </ul>
+            <p>
+                Imagenes obtenidas de <a href="https://www.freepik.es/psd-gratis/maqueta-psd-pantalones-cortos-morados-mujer-sesion-ropa-logo_16216449.htm#query=pantalone&position=4&from_view=search"> rawpixel.com en Freepik</a> 
+            </p>
+        </footer> -->
+        
+       
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+        <script src="submenu.js"></script>
     </body>
 </html>
