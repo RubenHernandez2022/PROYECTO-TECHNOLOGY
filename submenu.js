@@ -13,25 +13,18 @@
                                 });
                                       });
 
-// pag2    
-
-// const celulares=[{nombre:("iphone 11"),
-//                   descripcion:("tactil")},
-//                   {nombre:("iphone 13"),
-//                   descripcion:("toner")}
-
-// ];
-// let iphone11=document.querySelector("#iphone11");
-// if (iphone11=)
-
-
-// function comprar() {document.getElementById("iphone11").
+// function saludo(){
+//     let nombre=prompt("Ingrese nombre:");
+//     document.getElementById("resultado").innerHTML="Bienvenida/o:  "+nombre;
     
-//     <a  class="boton-tarjeta" href="./compra.html">IPHONE 11 $184999</a>
 // }
 
-const darleclik=document.querySelector("#master");
-darleclick.addEventListener("click",(event)=>{alert("se clickeo");
-                                            console.log(event)});
-// document.getElementById("click").onclick=function(hola){<img class="imagenes" src="./IMAGENES/iphone 11.jpg" alt="celular"></img>}
-// hola(); 
+//  saludo();
+
+ function cambiar(){
+     document.getElementById("direccion").innerHTML="Estamos en Chiclana 490, BHI";
+ }
+ cambiar();
+
+
+ 

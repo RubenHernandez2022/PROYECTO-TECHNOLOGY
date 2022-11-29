@@ -8,9 +8,10 @@
         --colorBlanco:white;
         --colorNegro: black;
         --colorrojo:red;
+        
      } 
  
-nav{
+.nav{
         background-image:url(./IMAGENES/tecnologia.webp);
         display: flex;
         background-size: contain;
@@ -94,7 +95,8 @@ section{margin:70px auto;
          align-items: center;
          z-index: 1; 
          padding: 2px;
-         box-shadow: 5px 5px 10px blue, -5px -5px 10px blue;}
+         box-shadow: 5px 5px 10px blue, -5px -5px 10px blue;
+        }
 
 .imagenes{width: 100%;
           height:300px;
@@ -110,8 +112,79 @@ section{margin:70px auto;
 
 .conocer{width:100%;
          height:700px;
-         margin-top: 400px;}
+         margin-top: 200px;
+        margin-bottom:30px;}
 
+
+/* sector footer */
+  .footer{background-image:url(./IMAGENES/tecnologia.webp);
+        display: flex;
+        background-size: cover;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap:wrap;
+        height:375px;
+        color:var(--colorBlanco);
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(3,2fr);}
+
+.footer ul{margin:8px 20px;}
+.footer ul a:hover{color:var(--colorrojo);}
+.footer p{display:flex;
+          justify-content: end;
+          margin-bottom: 0px;}
+.footer ul li{margin:2px;}      
+.footer ul li a{color: var(--colorBlanco);
+                display:flex;
+                text-decoration: none;
+                flex-wrap: nowrap;
+                row-gap: 20px;
+}    
+.footer ul li a p{margin-left: 10px;}
+
+.consulta{display:flex;
+          margin-top:15px;
+          justify-content:center;}  
+
+.fa-whatsapp{background-color: green;}
+.fa-instagram{background-color:purple;}
+
+.direccion{display:flex;
+           justify-content: start;
+           margin: 5px 50px;} 
+
+.animar-caracter
+           { text-transform: uppercase;
+             background-image: linear-gradient(
+               -225deg,
+               #231557 0%,
+               #44107a 29%,
+               #ff1361 67%,
+               #fff800 100%
+             );
+             background-size: auto auto;
+             background-clip: border-box;
+             background-size: 200% auto;
+             color: #fff;
+             background-clip: text;
+             -webkit-background-clip: text;
+             -webkit-text-fill-color: transparent;
+             animation: textclip 2s linear infinite;
+             display: inline-block;
+             font-size: 40px;
+           }
+iframe{width: 300px;
+      height: 127px;
+      /* overflow-y: auto;
+      overflow-x: auto;
+      resize: both;*/
+      position: relative;
+      left: 45px;
+      top:-8px;
+      z-index: 1;}            
+         
+         
 
 /* PAGINA 2 */
 
@@ -123,11 +196,24 @@ section{margin:70px auto;
 }
 
 .margen-pag2{margin:80px auto;
-             row-gap:50px;
+             row-gap:90px;
              max-width:1000px;
-             display:grid;
-             grid-template-columns: repeat(2,1fr);
-             grid-template-rows: repeat(2,1fr);}
+             /* display:grid;
+             grid-template-columns: repeat(2,1fr); */
+             grid-template-rows: repeat(3,1fr);}
+             
+.tarjeta2{width: 260px;
+          height:405px;
+          border: 2px solid gray;
+          border-radius: 8px ;
+          background-color:var(--colorNegro);
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          z-index: 1; 
+          padding: 2px;
+          box-shadow: 5px 5px 10px blue, -5px -5px 10px blue;}            
 
 #nosotros{color:var(--colorBlanco);
           width:100%;
@@ -135,31 +221,128 @@ section{margin:70px auto;
  
 .compra{position: relative;
         top:70px;} 
+    
+.ultimo-boton{margin-top: 2px;}
+
+/* FORMULARIO DE COMPRA */
+
+
+.flexColumn{
+    display: flex;
+    flex-direction: column;  
+}
+
+.formulario{
+    gap: 30px;
+    background-color: lightblue;
+    padding: var(--distancia);
+}
+
+.inputComp{
+    width: 300px;
+    padding: 10px;
+    border-radius: var(--distancia);
+}
+ #email:valid{
+    background-color:lightseagreen;
+} 
+input:invalid{
+    border: 2px solid var(--colorVioleta);
+}
+
+textarea{
+    border-radius: 10px;
+    height: 300px;
+    background-color: var(--colorVioleta);
+    
+}
+/* pseudoclase -> dos puntos y el nombre de la pseudoclase
+:hover -> cuando el mouse pasa por encima
+:active -> cuando clickeo o pulso algo
+*/
+button{
+    /* que no se vea
+    visibility: hidden
+    display: none; */
+    display: none;
+     padding: 20px;   
+     background-color: blue;
+}
+.titulo-formu{display: flex;
+    margin-top: 15px;
+    justify-content: center;
+   
+}
+
+
+.inputComp:active{
+    background-color: grey;
+}
+
+button:hover{
+    cursor: pointer;
+}
+button:active{
+    background-color:grey;
+}
+
+input:focus{
+    background-color: gray;
+}
+#despliegue{
+    visibility: hidden;
+}
+#despliegue:checked+button{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+/* a:active{
+    background-color: yellowgreen;
+} */
 
 
 /* responsive */
-     
+
+@media (max-width:835px){
+    .nav{width:100%;
+         height: 12 rem;}
+
+    .achica-titulo{display: flex; 
+                   animation: colores 5s 3;}
+
+    .navigation ul li{display:block;}
+
+    .navigation ul li a{display: block;
+                        padding: 0.5rem 0rem;}
+
+    .section{margin:0px auto}
+
+    .principal{margin:20px 0px;
+              margin-left:130px;}
+
+    .altocarousel{height:30vh;}
+
+} 
      
      /*-- tablet--*/
-@media (max-width:768px){
+@media (max-width:790px){
          .nav{width:100%;
-              height: 2rem;
-              margin-top: 1rem;}
+              height: 10 rem;}
     
          .achica-titulo{display: flex; 
                         animation: colores 5s 3;}
-    
-         .show{display:none}; 
     
          .navigation ul li{display:block;}
     
          .navigation ul li a{display: block;
                              padding: 0.5rem 0rem;}
    
-         .iconito{display: block;
+          .iconito{display: block;
                   cursor:pointer;
                   padding: 0.5rem 1rem;
-                  margin:10px -15px;}
+                  margin:10px 10px;} 
    
          .section{margin:0px auto}
    
@@ -167,17 +350,19 @@ section{margin:70px auto;
    
          .altocarousel{height:30vh;}
    
-         .logo{margin:44px 2px;
-               width:110px;
-               height:110px;}
-   
+          .logo{margin:44px 2px;
+               width:130px;
+                height:130px;}  
+
+         .show{display:none;}  
+         
          .x{position:absolute;
             top:60px;
-            right:-10px;}    
+            right:-5px;}     
 }
 
-@media(max-width:600px){
-    nav{width:100%;}
+@media(max-width:720px){
+    .nav{width:100%;}
 
     .principal{margin:70px;}
 
@@ -187,28 +372,25 @@ section{margin:70px auto;
 
     .achica-titulo{ margin:60px 60px;
                     font-weight: 400px;
-                    text-align:center;
+                    text-align:start;
                     font-size: 3em ;
                     text-shadow:3px 3px var(--colorBlanco);
                     animation:colores 5s 2;}
     
     .volver{margin-top:5px;}
     
-    .x{position:absolute;
-        top:61px;
-        left:498px;}
+    .x{position:fixed;
+        top:60px;
+        /* left:px;*/} 
     }
+    .footer p{margin-right: 20px;;}
 
-@media(max-width:540px){
-        nav{width:100%;}
+@media(max-width:600px){
+        .nav{width:100%;}
     
         .principal{margin:70px;}
-    
-        section{
-               grid-template-columns: 1fr;
-               justify-items: center;}
-    
-        .achica-titulo{margin:60px 50px;
+        .show{display:none;} 
+        .achica-titulo{margin:60px -135px;
                        font-weight: 400px;
                        text-align:center;
                        font-size: 3em ;
@@ -217,33 +399,74 @@ section{margin:70px auto;
         
         .volver{margin-top:5px;}
         
-        .x{position:absolute;
+        .x{position:fixed;
             top:60px;
-            left:450px;}
+            /* left:505px;*/} 
         }
+        #direccion{margin:5px 40px;}
+
+@media(max-width:548px){
+        .nav{width:100%;}
+        
+        .principal{margin:70px;}
+        
+        .achica-titulo{margin:60px -130px;
+                       font-weight: 300px;
+                       text-align:center;
+                       font-size: 3em ;
+                       text-shadow:3px 3px var(--colorBlanco);
+                       animation:colores 5s 2;}
+            
+        .volver{margin-top:5px;}
+        
+        .iconito{display: block;
+            cursor:pointer;
+            padding: 0.5rem 1rem;
+            margin:10px 4px;}
+            
+        .x{position:fixed;
+                top:60px;
+                /* left:460px;  */} 
+        
+        #direccion{margin:5px 40px;}    
+}
+            
+
+
 
     /* -- celulares ---*/
 
 @media(max-width:450px){
-        nav{width:100%;
+        .nav{width:100%;
             flex-direction:space-beetween;}
-
-        .altocarousel{height:15vh}
+       
+        .achica-titulo{margin:60px -135px;
+                       font-weight: 200px;
+                       text-align:start;
+                       font-size: 2em ;
+                       text-shadow:3px 3px var(--colorBlanco);
+                       animation:colores 5s 2;}
+        
+        .altocarousel{height:15vh;
+                      width:100%;}
     
         section{
             grid-template-columns: 1fr;
             justify-items: center;
             margin-top: 20px;}
 
+        .logo{margin:44px 2px;
+              width:100px;
+              height:100px;}
+
         .show{
             flex-direction: column;}
 
-        .x{position:absolute;
-         top:60px;
-         left:359px;}
+        .x{position:fixed;
+           top:60px;} 
 
-        .achica-titulo{margin:80px -80px;
-                       font-weight: 400px;
+        .achica-titulo{margin:80px -95px;
+                       font-weight: 300px;
                        text-align:center;
                        font-size: 2em ;
                        text-shadow:3px 3px var(--colorBlanco);
@@ -253,18 +476,27 @@ section{margin:70px auto;
                 cursor:pointer;
                 padding: 0.5rem 1rem;
                 margin:10px -10px;}
-}
+        #direccion{margin: 5px 12px;}        
+} 
 
 @media(max-width:400px){
+       .nav{width:100%}
+
+       .achica-titulo{margin:80px -95px;
+                      font-weight: 200px;
+                      text-align:start;
+                      font-size: 2em ;
+                      text-shadow:3px 3px var(--colorBlanco);}
 
        .iconito{display: block;
                 cursor:pointer;
                 padding: 0.5rem 1rem;
-                margin:10px -10px;}
+                margin:10px 4px;}
        
-       .x{position:absolute;
+       .x{position:fixed;
           top:60px;
-          left:310px;}        
+          left:310px;}  
+         
 }
 
 
@@ -284,3 +516,9 @@ section{margin:70px auto;
                          color:var(colorazul);
                         }
 }
+
+@keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }         
