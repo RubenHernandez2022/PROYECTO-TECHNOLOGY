@@ -1,4 +1,5 @@
-#info-table{text-align: center;}
+#info-table{text-align: center;
+margin-bottom: 180px;;}
 
 #info-table h1{text-align: center;
                color:blue;
@@ -57,7 +58,8 @@ a{text-decoration: none;color: rgba(170, 166, 166, 0.99);}
 
 .footer{margin-top:200px;}
 
-#margen{width: 60%!important;}
+#margen{width: 60%!important;
+	    margin-top:100PX!important;}
 
 .vuelta{position: fixed;
         top:210px;
