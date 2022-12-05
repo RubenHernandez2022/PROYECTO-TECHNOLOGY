@@ -26,8 +26,7 @@ function selectDelete(){
     }
     // Precio total
     allShopPriceTotal();
-    // puntos totales
-    //allIntegralTotal();
+    
 }
 
 // reducir en cantidad
@@ -70,7 +69,7 @@ function singleSubTotal(obj){
     var count = obj.parentElement.children[4].children[1].value;
     obj.innerHTML = eval(price + "*" + count);
 }
-// El precio total de todos los bienes
+// El precio total 
 function allShopPriceTotal(){
     var obj = document.getElementById("resultTotalMoney");
     var allSingelSubElement = document.getElementsByClassName("shopCount");
@@ -83,24 +82,19 @@ function allShopPriceTotal(){
     }
     obj.innerHTML = eval(sum);
 }
-// La suma de los puntos disponibles
-//function allIntegralTotal(){
-    // puntos totales
-    //var obj = document.getElementById("integralTotal");
-    // integral simple
-    //var allSingelIntegralElement = document.getElementsByClassName("integral");
-    // conjunto de cálculo
-    var sum = "0";
-    for (singelIntegralElement of allSingelIntegralElement){
-        // Cantidad
-        var count = singelIntegralElement.parentElement.children[4].children[1].value;
-        if (sum != ""){
-            sum += "+";
-        }
-        sum += singelIntegralElement.innerHTML + "*" + count;
-    }
-    obj.innerHTML = eval(sum);
-//}
+
+    //  //conjunto de cálculo
+    //  var sum = "0";
+    //  for (singelIntegralElement of allSingelIntegralElement){
+    //      // Cantidad
+    //      var count = singelIntegralElement.parentElement.children[4].children[1].value;
+    //      if (sum != ""){
+    //          sum += "+";
+    //      }
+    //      sum += singelIntegralElement.innerHTML + "*" + count;
+    //  }
+    //  obj.innerHTML = eval(sum);
+
 // Compra ahora
 function buyNow(){
     var result = confirm("¡FELICIDADES por comprar!");
@@ -149,9 +143,6 @@ function addToCart(obj){
         var td2 = document.createElement("td");
         td2.className = "imgbackground";
         td2.innerHTML = '<img src="'+ shop.shopImg +'" height="100" width="100"/>';
-        // var td3 = document.createElement("td");
-        // td3.className = "integral";
-        // td3.innerHTML = shop.shopIntegral;
         var td4 = document.createElement("td");
         td4.innerHTML = shop.shopPrice;
         var td5 = document.createElement("td");
@@ -161,23 +152,20 @@ function addToCart(obj){
         var td6 = document.createElement("td");
         td6.className = "shopCount";
         td6.innerHTML = parseInt(shop.shopPrice);
-        //var td7 = document.createElement("td");
-        //td7.innerHTML = '<a href="#" class="delete" οnclick="deleteChild(this)"> Eliminar </a>';
+        
         tr.appendChild(td1);
         tr.appendChild(td2);
         // tr.appendChild(td3);
         tr.appendChild(td4);
         tr.appendChild(td5);
         tr.appendChild(td6);
-        //tr.appendChild(td7);
         // Añadir al carrito
         cartBox.appendChild(tr);
     }
     
     // Precio total
     allShopPriceTotal();
-    // puntos totales
-    //allIntegralTotal();
+    
     // cambiar de color
     changeBackground();
 }
@@ -202,5 +190,9 @@ window.onload = function(){
 }
 
 
+function submenu() {
+    var element = document.getElementById("lista");
+    element.classList.toggle("sub");
+  }
 
 

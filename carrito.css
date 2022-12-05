@@ -1,15 +1,31 @@
+#unico{width:100%}
+.nave{
+	background-image:url(./IMAGENES/tecnologia.webp);
+	display: flex;
+	background-size: contain;
+	flex-basis: 100%; 
+	justify-content: space-between;
+	flex-wrap:nowrap;
+	position: sticky;
+	top: 0px;
+	z-index: 2;
+	width:100%;
+} 
+
 #info-table{text-align: center;
-margin-bottom: 180px;;}
+            margin-bottom: 100px;}
 
 #info-table h1{text-align: center;
-               color:blue;
+               color:white;
+			   background-color: black;
                text-transform: uppercase;
                margin: 30px;}
 
-#info-input{width: 1200px;margin: 0px auto;}
+#info-input{width: 100%;
+	        margin: 0px ;}
 
 #info-input>div{
-			width: 1200px;
+			/* width: 1200px; */
 			margin: 20px 0px;}
 			
 .shopCount{color: orange;}
@@ -32,26 +48,35 @@ a{text-decoration: none;color: rgba(170, 166, 166, 0.99);}
 			
 
 			            
-#shop{width: 800px;margin: 0px auto;
-	  height: auto;
-	  overflow: auto;}
+#shop{
+	  width:80%;
+	  margin:50px auto;
+	  height:500px;
+	  /* overflow:auto;*/} 
 			
-#shop li{text-align: center;
+#shop li{display:grid;
+	     grid-template-columns: repeat(2,1fr);
+         grid-template-rows: repeat(1,1fr);
+	     text-align: center;
 		 list-style: none;
-		 float: left;
+		 float: center;
 		 height: auto;
 		 overflow: auto;
-		 margin: 20px;}
+		 margin: 40px;}
 			
 #shop a{display: block;
 		height: auto;
-		overflow: auto;}
-			
+		overflow: auto;
+		text-decoration: none;}
+		
+#shop img{margin-bottom:35px;}
+
 .price{color: red;}
 
-.contenedor{height: 700px;}  
+.contenedor{width:100%;
+        	height: 1200px;}  
 
-#mytable{width: 75%;}
+#mytable{width: 100%;}
 
 .comprado{display:flex;
           justify-content:center; }
@@ -61,7 +86,13 @@ a{text-decoration: none;color: rgba(170, 166, 166, 0.99);}
 #margen{width: 60%!important;
 	    margin-top:100PX!important;}
 
-.vuelta{position: fixed;
-        top:210px;
-        right: 270px;
-        z-index: 2;}
+.vuelta{position:fixed;
+        top:202px;
+        right: 15px;
+	    z-index: 2;}
+
+.titular{background-color: blue;
+	     color:white;}
+	
+
+		

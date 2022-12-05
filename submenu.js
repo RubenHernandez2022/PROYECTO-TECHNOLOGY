@@ -13,6 +13,11 @@
                                 });
                                       });
 
+function cambiar(){
+        document.getElementById("direccion").innerHTML="Estamos en Chiclana 490, BHI";
+                  }
+cambiar();                                   
+
 // let nombre="";             
 // let respuesta="";
 // function saludo(){
@@ -35,10 +40,7 @@
  
 //   saludo();
 
- function cambiar(){
-     document.getElementById("direccion").innerHTML="Estamos en Chiclana 490, BHI";
- }
- cambiar();
+
 
 
  

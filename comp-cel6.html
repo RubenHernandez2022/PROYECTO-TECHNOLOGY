@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="./carrito.css">
     <link rel="stylesheet" href="./estilo.css">
     <script src="https://kit.fontawesome.com/a0fd3005f4.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
     <link rel="icon" href="./IMAGENES/LOGO PROY.ICO.ico">
     <title> Lider en tecnologia</title>
 </head>
-<body>
-    <nav class="nav">
+<body id="unico">
+    <nav class="nave">
         <div>
             <img class="logo transform" src="./IMAGENES/logo-azul.jpg"  alt="logo">
         </div>
@@ -20,85 +20,79 @@
         <div >
             <h1 class="achica-titulo">Technology</h1>
         </div> 
-            
-           
+
+        
         <div class="navigation">
-            <img class="iconito" src="./IMAGENES/ICONO.png" alt="icono">
-            <ul class="show">
+            <img class="icon" src="./IMAGENES/ICONO.png" alt="icono" onclick="submenu()">
+            <ul id="lista" class="">
                 <li><a href="#contacto"> Contacto</a></li>
             </ul>
         </div> 
-
-          
-    </nav> 
+        
+    </nav>  
     
     <main class="contenedor">
-        
-			 <div id="shop">
+        <div>
+            <div class="vuelta">
+                <a  href="celulares.html"><button class="btn btn-primary">VOLVER</button></a>
+            </div>
+	        <div id="shop">
 
 				<ul>
 					<li>
-						<a href="#" onclick="addToCart(this);">
-							<img src="./imagenes/CELU.jpg" height="100" width="100"/><br />
-							<span class="price">14999.00</span>$<br /> 
-							Añadir al carrito
-						</a>
-					</li>
-					<li>
-						<a href="#" onclick="addToCart(this);">
-							<img src="./IMAGENES/samsung s20.jpg" height="100" width="100"/><br />
-							<span class="price">1999.00</span>$<br /> 
-							 Añadir al carrito
-						</a>
-					</li>
-					<li>
-						<a href="#" onclick="addToCart(this);">
-							<img src="./imagenes/celu3.jpg" height="100" width="100"/><br />
-							<span class="price">3999.00</span>$<br /> 
-							 Añadir al carrito
-						</a>
-					</li> 
-					
+						<a href="#info-table" onclick="addToCart(this);">
+							<img src="./IMAGENES/samsung s20.jpg" height="300" width="200"/><br />
+							$<span class="price">129999.00</span><br />
+                             <button class="btn btn-primary">Añadir al carrito</button> 
+					    </a>
+                        <div>
+                           <h2 class="titular">DESCRIPCION</h2><br />   
+                           <h3>128gb</h3>
+                           <h3>Pantalla Super Amoled de 6.5"</h3>
+                           <h3>Procesador Snapdragon 865 Octa-Core de 2.84ghz</h3>
+                           <h3>6GB RAM </h3>
+                           <h3>3 cámaras traseras + 1 frontal</h3>
+                           <h3>Resistente al agua y al polvo </h3>
+                        </div>
+               		</li>
+							
 				</ul>
-                <div class="vuelta">
-                    <a  href="celulares.html"><button class="btn btn-primary">VOLVER</button></a>
-               </div>
+               
 			</div> 
-			<div id="info-table">
-				<h1>carrito de compras</h1>
+		    <div id="info-table">
+			    <h1>carrito de compras</h1>
 				<table id="mytable">
-					<tr>
-         
-						<th><input type="checkbox" id="allCheck" onclick="selectAll()"/>seleccionar todo</th> 
-		                <th>Producto</th>
-						<th>Precio unitario </th>
-						<th>Cantidad</th>
-						<th>Subtotal </th>
-					</tr>
+				   <tr>
+                      <th></th>
+                      <th>Producto</th>
+				      <th>Precio unitario </th>
+				      <th>Cantidad</th>
+				      <th>Subtotal </th>
+				   </tr>
         
-					
 				</table>
-			</div>
-			<div id="info-input">
-				<div id="margen" class="total-div">
-					<span>Precio total: $<span id="resultTotalMoney">0</span></span>
-				</div>
-				<div class="btorinter-div"> 
-					<button class="btn btn-danger" onclick="selectDelete()" >Eliminar seleccionado</button>
+			</div> 
+			 
+            <div id="info-input">
+			    <div id="margen" class="total-div text-center">
+			        <span>Precio total: $<span id="resultTotalMoney">0</span></span>
+			    </div>
+			    <div class="btorinter-div"> 
+			        <button class="btn btn-danger" onclick="selectDelete()" >Eliminar seleccionado</button>
 				</div> 
-				<div class="comprado"> 
-					<button class="btn btn-primary" onclick="buyNow()">Compra ahora</button>
-				</div> 
-			</div>
-		
-    </main>
+            </div> 
+			<div class="comprado"> 
+				<button class="btn btn-primary" onclick="buyNow()">Compra ahora</button>
+			</div>      
+        </div>
+    </main> 
 
     
     <footer id=contacto class="footer">
         <div class="container">
             <div class="row">
                <div class="col-md-12 text-center">
-                 <h3 class="animar-caracter">consultanos</h3>
+                 <h3 class="animar-caracter">CONSULTANOS</h3>
                </div>
             </div>
         </div>
@@ -128,7 +122,7 @@
             
         </ul>
        
-        <h3 id="direccion">Nos encontramos en Pasaje Arenales 2568.Bahía </h3>
+        <h3>Estamos en Chiclana 490, BHI</h3>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d778.201673781977!2d-62.26144981185612!3d-38.72224685240533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eda34b414fe2b7%3A0xf4086ee5bdf31dad!2sChiclana%20490%2C%20B8000DBJ%20Bah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1669523141586!5m2!1ses-419!2sar"  ></iframe>   
         <p>
             Imagenes obtenidas para fines educativos @2022  
@@ -138,5 +132,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script src="carrito.js"></script>   
+     
 </body>
 </html>
