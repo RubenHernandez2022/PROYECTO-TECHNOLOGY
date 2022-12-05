@@ -12,8 +12,7 @@ function deleteChild(obj){
     nowtable.removeChild(nowtr);
     // Precio total
     allShopPriceTotal();
-    // puntos totales
-    //allIntegralTotal();
+    
 }
 // eliminación por lotes
 function selectDelete(){
@@ -29,33 +28,7 @@ function selectDelete(){
     
 }
 
-// reducir en cantidad
-function reduce(obj){
-    var textElement = obj.parentElement.children[1];
-    if (textElement.value == "1"){
-        return;
-    }
-    textElement.value = eval(textElement.value + "-1");
-    // Subtotal
-    var singelSumElement = obj.parentElement.parentElement.children[5];
-    singleSubTotal(singelSumElement);
-    // Precio total
-    allShopPriceTotal();
-    // puntos totales
-    //allIntegralTotal();
-}
-// Incrementa el número de
-function plus(obj){
-    var textElement = obj.parentElement.children[1];
-    textElement.value = eval(textElement.value + "+1");
-    // Subtotal
-    var singelSumElement = obj.parentElement.parentElement.children[5];
-    singleSubTotal(singelSumElement);
-    // Precio total
-    allShopPriceTotal();
-    // puntos totales
-    //allIntegralTotal();
-}
+
 // Inicializar todos los subtotales de productos
 function singleAllSubTotal(){
     var obj = document.getElementsByClassName("shopCount");
@@ -83,17 +56,7 @@ function allShopPriceTotal(){
     obj.innerHTML = eval(sum);
 }
 
-    //  //conjunto de cálculo
-    //  var sum = "0";
-    //  for (singelIntegralElement of allSingelIntegralElement){
-    //      // Cantidad
-    //      var count = singelIntegralElement.parentElement.children[4].children[1].value;
-    //      if (sum != ""){
-    //          sum += "+";
-    //      }
-    //      sum += singelIntegralElement.innerHTML + "*" + count;
-    //  }
-    //  obj.innerHTML = eval(sum);
+    
 
 // Compra ahora
 function buyNow(){
@@ -146,16 +109,14 @@ function addToCart(obj){
         var td4 = document.createElement("td");
         td4.innerHTML = shop.shopPrice;
         var td5 = document.createElement("td");
-        td5.innerHTML = '<button οnclick="reduce(this)">-</button>&nbsp;'
-                    + '<input type="text" size="1" readonly="true" value="1"/>'
-                    + '&nbsp;<button οnclick="plus(this)">+</button>';
+         td5.innerHTML ='<input type="text" size="1" readonly="true" value="1"/>'
+                      
         var td6 = document.createElement("td");
         td6.className = "shopCount";
         td6.innerHTML = parseInt(shop.shopPrice);
         
         tr.appendChild(td1);
         tr.appendChild(td2);
-        // tr.appendChild(td3);
         tr.appendChild(td4);
         tr.appendChild(td5);
         tr.appendChild(td6);
@@ -165,28 +126,13 @@ function addToCart(obj){
     
     // Precio total
     allShopPriceTotal();
-    
-    // cambiar de color
-    changeBackground();
+   
 }
-// El movimiento del mouse cambia el color de fondo
-function changeBackground(){
-    var imgtd = document.getElementsByClassName("imgbackground");
-    for (singeltd of imgtd){
-        singeltd.onmousemove = function(){
-            this.style.backgroundColor = "orange";
-        }
-        singeltd.onmouseleave = function(){
-            this.style.backgroundColor = "white";
-        }
-    }
-}
+
 // Inicializar el contenido de la interfaz
 window.onload = function(){
-    changeBackground();
     singleAllSubTotal();
     allShopPriceTotal();
-    allIntegralTotal();
 }
 
 
