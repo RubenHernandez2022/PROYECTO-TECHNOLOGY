@@ -480,9 +480,89 @@ iframe{width: 300px;
         margin-top: 10px;}
         
         .titular{margin-top: 50px;;}
-    
-         
+    }
+ 
+@media(max-width:388px){
+        .nav{width:100%;}
+            
+        .nave{width:100%;
+              z-index: 3;}
+     
+        .vuelta{position: fixed;
+                top:200px;
+                right: 3px;
+                z-index: 2;}     
+  
+        .achica-titulo{ margin:80px 10px;
+                        font-weight: 200px;
+                        text-align:start;
+                        font-size: 2em ;
+                        text-shadow:3px 3px var(--colorBlanco);}
+     
+        .iconito{display: block;
+                 cursor:pointer;
+                 padding: 0.5rem 1rem;
+                 margin:10px 4px;}
+            
+        .icon{display: block;
+              cursor:pointer;
+              padding: 0.5rem 0.5rem;
+              margin:10px 0px;}
+            
+        .x{position:fixed;
+           top:60px;
+           left:283px;}  
+     
+        #shop{height:650px;
+              margin-bottom: 310px;}
+     
+        #info-table{text-align: center;
+                    margin-top: 10px;}
+             
+        .titular{margin-top: 50px;}
 }
+
+@media(max-width:368px){
+    .nav{width:100%;}
+    
+    .nave{width:100%;
+          z-index: 3;}
+
+     .vuelta{position: fixed;
+             top:200px;
+             right: 3px;
+             z-index: 2;}     
+
+
+    .achica-titulo{margin:80px -82px;
+                   font-weight: 200px;
+                   text-align:start;
+                   font-size: 2em ;
+                   text-shadow:3px 3px var(--colorBlanco);}
+
+    .iconito{display: block;
+             cursor:pointer;
+             padding: 0.5rem 1rem;
+             margin:10px 4px;}
+    
+    .icon{display: block;
+          cursor:pointer;
+          padding: 0.5rem 0.5rem;
+          margin:10px 0px;}
+    
+    .x{position:fixed;
+       top:60px;
+       left:270px;}  
+
+     #shop{height:650px;
+     margin-bottom: 310px;}
+
+     #info-table{text-align: center;
+     margin-top: 10px;}
+     
+     .titular{margin-top: 50px;;}
+ }
+
 
 
 /* animacion */
